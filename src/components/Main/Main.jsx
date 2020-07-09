@@ -8,8 +8,8 @@ const Main = () => {
     <div className="container">
       <div className="row justify-content-center mt-5 p-0">
         <img className={styles.spaceImage}  src="https://i.redd.it/9ktcyhlazfwx.png" alt="Solar system bodies relative distances"></img>
+        <h3 className={styles.mainTitle} >Hello World, and Beyond! A look at our Solar System</h3>
         <div>
-          <h3 className={styles.mainTitle} >Hello World, and Beyond! A look at our Solar System</h3>
           <div className={styles.planetList}>
             <div className={styles.planet}><Planet imgURL="../../assets/sun.png" planetName="Sun" Size="" ></Planet></div>
 

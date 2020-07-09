@@ -24,7 +24,7 @@ class Planet extends React.Component{
         let imageSize = this.props.Size;
         let planetName = this.props.planetName;
         if(this.state.clickedState){
-            if(planetName != 'Sun') imageSize = 2*imageSize;
+            if(planetName !== 'Sun') imageSize = 2*imageSize;
         }
         else{
             imageSize = this.props.Size;

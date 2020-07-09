@@ -7,30 +7,34 @@
 
 .mainTitle {
   margin: 0px 0px 60px;
+  display: flex;
+  align-items: center;
 }
 
 .planetList{
   display: flex;
   flex-direction: column;
-  height: auto;
+  height: 2000px;
   align-items: center;
   padding-bottom: 100px;
+  background-image: url(/assets/stars.png);
+  width: 100rem;
 }
 
 .mercury{
-  flex:0.387;
+  margin-top:38.7px;
   height:383px;
 }
 .venus{
-  flex:0.723;
+  margin-top:33.6px;
   height:949px;
 }
 .earth{
-  flex:1;
+  margin-top:27.7px;
   height:1000x;
 }
 .mars{
-  flex:1.52;
+  margin-top:52px;
   height:532px;
 }
 .planet{
