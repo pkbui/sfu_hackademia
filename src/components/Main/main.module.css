@@ -14,7 +14,7 @@
 .planetList{
   display: flex;
   flex-direction: column;
-  height: 2000px;
+  max-height: 10000px;
   align-items: center;
   padding-bottom: 100px;
   background-image: url(/assets/stars.png);
@@ -23,19 +23,16 @@
 
 .mercury{
   margin-top:38.7px;
-  height:383px;
 }
 .venus{
   margin-top:33.6px;
-  height:949px;
 }
 .earth{
   margin-top:27.7px;
-  height:1000x;
 }
 .mars{
   margin-top:52px;
-  height:532px;
+  margin-bottom: 100px;
 }
 .planet{
   display: flex;

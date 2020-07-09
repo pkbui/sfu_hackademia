@@ -19,23 +19,21 @@ class Planet extends React.Component{
 
     render() {
         console.log('render called');
-        // var yourImg = document.getElementById('yourImgId');
-        //let imageSize = 100;
         let imageSize = this.props.Size;
         let planetName = this.props.planetName;
+        let planetDescription = this.props.planetDescription;
         if(this.state.clickedState){
             if(planetName !== 'Sun') imageSize = 2*imageSize;
         }
         else{
             imageSize = this.props.Size;
-            //imageSize = "100";
         }
 
         return (
-        <h1>{this.state.clickedState ? "Planet name: " + planetName : ""}
+        <div className={styles.planetPopup} >{this.state.clickedState ? <h1>{planetName}</h1> : ""}
             <img className={styles.spaceImage} src={this.props.imgURL} alt={this.props.planetName} onClick={this.testFunction} width={imageSize}></img>
-            <p>{this.state.clickedState ? "Description: This is the planet " + planetName : ""}</p> 
-        </h1>
+            <p>{this.state.clickedState ? planetDescription : ""}</p> 
+        </div>
         );
     }
 }

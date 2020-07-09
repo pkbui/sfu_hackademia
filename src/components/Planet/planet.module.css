@@ -5,3 +5,12 @@
     max-width: 20%;
     margin: 30px;
 }
+p{
+    font-size: 14;
+}
+.planetPopup{
+    display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+}
