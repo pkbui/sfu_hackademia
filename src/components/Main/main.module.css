@@ -1,6 +1,10 @@
 
 .spaceImage {
-  width: 50em;
+  width: 200;
   height: auto;
   margin: 30px;
 } /*meant to prevent image from getting too large*/
+
+.planetList{
+  display: inline-flex
+}

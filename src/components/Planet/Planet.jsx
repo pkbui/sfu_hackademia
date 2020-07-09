@@ -1,13 +1,37 @@
 import React from "react";
 // import { Button } from 'element-react';
+// import Zoom from 'react-img-zoom';
 import styles from "./planet.module.css";
 
 class Planet extends React.Component{
+    testFunction(){
+        this.setState({
+            clickedState: !this.state.clickedState})
+    }
+    
+    constructor(props){
+        super(props);
+        this.testFunction = this.testFunction.bind(this);
+        this.state = {
+            clickedState: false
+        };
+    }
+
     render() {
+        console.log('render called');
+        let imageSize = "100";
+        let planetName = this.props.planetName;
+        if(this.state.clickedState){
+            imageSize = "300";
+        }
+        else{
+            imageSize = "100";
+        }
+
         return (
-        <h1> Planet name: {this.props.planetName}
-            <img src={this.props.imgURL} alt={this.props.planetName} classname={styles.planetImage}></img>
-            <p>Description: This is the sun, the center of our solar system</p> 
+        <h1>{this.state.clickedState ? "Planet name: " + planetName : ""}
+            <img src={this.props.imgURL} alt={this.props.planetName} onClick={this.testFunction} width={imageSize}></img>
+            <p>{this.state.clickedState ? "Description: This is the planet " + planetName : ""}</p> 
         </h1>
         );
     }

@@ -10,7 +10,10 @@ const Main = () => {
         <img className={styles.spaceImage}  src="https://i.redd.it/9ktcyhlazfwx.png" alt="Solar system bodies relative distances"></img>
         <div>
           <h3>Hello World, and Beyond! A look at our Solar System</h3>
-          <Planet imgURL="../../assets/sun.png"></Planet>
+          <ul className={styles.planetList}>
+            <li><Planet imgURL="../../assets/sun.png" planetName="Sun"></Planet></li>
+            <li><Planet imgURL="../../assets/earth.png" planetName="Earth"></Planet></li>
+          </ul>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="col-8 col-md-5">
             <h5 className={styles.title}>Interactive Solar System</h5>
             <p className={styles.description}>
-              A web app created in one week for SFU's Software Systems Student Society Hackedemia competition! Contributors: Jason Spence, Benjamin Djukastein, Nhi Mai-Do and
+              A web app created in one week for SFU's Software Systems Student Society Hackedemia competition! Contributors: Jason Spence, Benjamin Djukastein, Nhi Mai-Do and Phu-Khang Bui
             </p>
           </div>
           <div className="col-2">
