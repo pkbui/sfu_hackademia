@@ -1,10 +1,22 @@
 
 .spaceImage {
-  width: 200;
+  width: 100%;
   height: auto;
-  margin: 30px;
-} /*meant to prevent image from getting too large*/
+  margin: 0px 0px 30px;
+} 
+
+.mainTitle {
+  margin: 0px 0px 60px;
+}
 
 .planetList{
-  display: inline-flex
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  align-items: center;
+}
+
+.planet{
+  display: flex;
+  flex:1; /*If we calculate the ratios of the various AU's, setting each flex value to the ratio will spread them out correctly*/
 }

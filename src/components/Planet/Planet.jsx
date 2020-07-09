@@ -30,7 +30,7 @@ class Planet extends React.Component{
 
         return (
         <h1>{this.state.clickedState ? "Planet name: " + planetName : ""}
-            <img src={this.props.imgURL} alt={this.props.planetName} onClick={this.testFunction} width={imageSize}></img>
+            <img className={styles.spaceImage} src={this.props.imgURL} alt={this.props.planetName} onClick={this.testFunction} width={imageSize}></img>
             <p>{this.state.clickedState ? "Description: This is the planet " + planetName : ""}</p> 
         </h1>
         );
