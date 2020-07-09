@@ -12,11 +12,14 @@ const NavBar = () => {
       </div>
       <nav className="navbar navbar-expand-sm navbar-light border-bottom justify-content-between">
         <Link className="navbar-brand" to="/">
-          sosy_hackademia
+          Solar System Explorer
         </Link>
         <div className="navbar-nav">
           <Link className="nav-item nav-link active" to="/">
-            Blank
+            Main
+          </Link>
+          <Link className="nav-item nav-link active" to="/reference">
+            Reference
           </Link>
         </div>
       </nav>
