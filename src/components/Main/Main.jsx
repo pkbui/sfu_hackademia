@@ -11,8 +11,12 @@ const Main = () => {
         <div>
           <h3 className={styles.mainTitle} >Hello World, and Beyond! A look at our Solar System</h3>
           <div className={styles.planetList}>
-            <div className={styles.planet}><Planet imgURL="../../assets/sun.png" planetName="Sun"></Planet></div>
-            <div className={styles.planet}><Planet imgURL="../../assets/earth.png" planetName="Earth"></Planet></div>
+            <div className={styles.planet}><Planet imgURL="../../assets/sun.png" planetName="Sun" Size="" ></Planet></div>
+
+            <div className={styles.plane, styles.mercury}><Planet imgURL="../../assets/mercury.png" planetName="Mercury" Size="38.3" ></Planet></div>
+            <div className={styles.planet, styles.venus}><Planet imgURL="../../assets/venus.png" planetName="Venus" Size="94.9"></Planet></div>
+            <div className={styles.planet, styles.earth}><Planet imgURL="../../assets/earth.png" planetName="Earth" Size="100"></Planet></div>
+            <div className={styles.planet, styles.mars}><Planet imgURL="../../assets/mars.png" planetName="Mars" Size="53.2"></Planet></div>
           </div>
         </div>
       </div>

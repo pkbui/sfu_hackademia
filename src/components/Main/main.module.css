@@ -12,11 +12,27 @@
 .planetList{
   display: flex;
   flex-direction: column;
-  height: 1000px;
+  height: auto;
   align-items: center;
+  padding-bottom: 100px;
 }
 
+.mercury{
+  flex:0.387;
+  height:383px;
+}
+.venus{
+  flex:0.723;
+  height:949px;
+}
+.earth{
+  flex:1;
+  height:1000x;
+}
+.mars{
+  flex:1.52;
+  height:532px;
+}
 .planet{
   display: flex;
-  flex:1; /*If we calculate the ratios of the various AU's, setting each flex value to the ratio will spread them out correctly*/
 }

@@ -19,13 +19,16 @@ class Planet extends React.Component{
 
     render() {
         console.log('render called');
-        let imageSize = "100";
+        // var yourImg = document.getElementById('yourImgId');
+        //let imageSize = 100;
+        let imageSize = this.props.Size;
         let planetName = this.props.planetName;
         if(this.state.clickedState){
-            imageSize = "300";
+            if(planetName != 'Sun') imageSize = 2*imageSize;
         }
         else{
-            imageSize = "100";
+            imageSize = this.props.Size;
+            //imageSize = "100";
         }
 
         return (
