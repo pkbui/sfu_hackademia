@@ -1,0 +1,14 @@
+.planetList{
+    display: flex;
+    flex-direction: column;
+    max-height: 10000px;
+    align-items: center;
+    padding-bottom: 100px;
+    background-image: url(/assets/stars.png);
+    width: 100rem;
+}
+
+.planet{
+    display: flex;
+}
+  

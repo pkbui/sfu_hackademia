@@ -7,16 +7,33 @@
 
 .mainTitle {
   margin: 0px 0px 60px;
+  display: flex;
+  align-items: center;
 }
 
 .planetList{
   display: flex;
   flex-direction: column;
-  height: 1000px;
+  max-height: 10000px;
   align-items: center;
+  padding-bottom: 100px;
+  background-image: url(/assets/stars.png);
+  width: 100rem;
 }
 
+.mercury{
+  margin-top:38.7px;
+}
+.venus{
+  margin-top:33.6px;
+}
+.earth{
+  margin-top:27.7px;
+}
+.mars{
+  margin-top:52px;
+  margin-bottom: 100px;
+}
 .planet{
   display: flex;
-  flex:1; /*If we calculate the ratios of the various AU's, setting each flex value to the ratio will spread them out correctly*/
 }
