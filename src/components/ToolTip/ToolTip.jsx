@@ -1,4 +1,5 @@
 import React from "react";
+import "./tooltip.module.css";
 
 class ToolTip extends React.Component{
 
@@ -14,11 +15,12 @@ class ToolTip extends React.Component{
     }
 
     render() {
-        var tipMessage = " ";
-        if(this.state.hover){
-            tipMessage = this.props.planetMessage;
-        }
-        return (<p style={tipMessage} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>{tipMessage}</p>)
+        let tipMessage = this.props.planetMessage;
+        return (
+        <div style={tipMessage}>
+            <p style={tipMessage} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>{this.state.hover ? tipMessage : " "}</p>
+        </div>
+        );
     }
 }
 
