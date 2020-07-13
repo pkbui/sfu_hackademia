@@ -15,6 +15,10 @@ class ToolTip extends React.Component{
 
     render() {
         var tipMessage = " ";
+        if(this.state.hover){
+            tipMessage = this.props.planetMessage;
+        }
+        return (<p style={tipMessage} onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover}>{tipMessage}</p>)
     }
 }
 

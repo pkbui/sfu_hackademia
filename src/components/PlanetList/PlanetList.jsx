@@ -1,6 +1,7 @@
 import React from "react";
 // import { Button } from 'element-react';
 import styles from "./planetlist.module.css";
+//import ToolTip from "../Tooltip/Tooltip";
 import Planet from "../Planet/Planet"
 
 class PlanetList extends React.Component{
