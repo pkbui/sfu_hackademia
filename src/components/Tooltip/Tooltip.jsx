@@ -1,23 +1,21 @@
-import React, { useState } from 'react';
-//import styles from "./tooltip.module.css";
+import React from "react";
 
-function Tooltip() {
-  const [isShown, setIsShown] = useState(false);
+class ToolTip extends React.Component{
 
-  return (
-    <div className="App">
-      <button
-        onMouseEnter={() => setIsShown(true)}
-        onMouseLeave={() => setIsShown(false)}>
-        Hover over me!
-      </button>
-      {isShown && (
-        <div>
-          I'll appear when you hover over the button.
-        </div>
-      )}
-    </div>
-  );
+    constructor(props) {
+        super(props)
+        this.state = {
+            hover: false
+        }
+    }
+
+    toggleHover() {
+        this.setState({hover: !this.state.hover})
+    }
+
+    render() {
+        var tipMessage = " ";
+    }
 }
 
-export default Tooltip;
+export default ToolTip;
