@@ -1,0 +1,13 @@
+.references{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: left;
+}
+.title{
+    display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  margin: 30px;
+}

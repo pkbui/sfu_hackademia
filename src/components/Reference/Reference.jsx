@@ -5,9 +5,12 @@ import styles from "./reference.module.css";
 const Reference = () => {
   return <main id="mainContent">
     <div className="container">
-      <div className="row justify-content-center mt-5 p-0">
-        <img className={styles.spaceImage}  src="https://i.redd.it/9ktcyhlazfwx.png" alt="Solar system bodies relative distances"></img>
-        <h3>Reference</h3>
+      <div className="row justify-content-center mt-5 p-0"className={styles.reference}>
+        <h3 className={styles.title}>Reference</h3>
+        <p>
+          (We will clean this up later)
+          
+        </p>
       </div>
     </div>
   </main>;
