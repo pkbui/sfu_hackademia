@@ -19,7 +19,8 @@
     "react-img-zoom": "^0.1.0",
     "react-router-dom": "5.1.2",
     "react-scripts": "3.4.1",
-    "typescript": "^3.9.6"
+    "typescript": "^3.9.6",
+    "concurrently": "^5.2.0"
   },
   "eslintConfig": {
     "extends": "react-app"
